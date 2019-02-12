@@ -76,7 +76,7 @@ To track events of hiding & allowing permissions associated with `SPPermission`,
 
     @objc optional func didHide()
     @objc optional func didAllow(permission: SPPermissionType)
-    @objc optional func didDenied(permission: SPPermissionType)
+    @objc optional func didDeny(permission: SPPermissionType)
 }
 ```
 
