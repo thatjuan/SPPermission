@@ -47,6 +47,9 @@ extension SPPermission {
     
     @objc optional func didHide()
     @objc optional func didAllow(permission: SPPermissionType)
+    @objc optional func didDeny(permission: SPPermissionType)
+    
+    @available(*, deprecated, renamed: "didDeny")
     @objc optional func didDenied(permission: SPPermissionType)
 }
 
